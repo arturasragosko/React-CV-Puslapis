@@ -5,4 +5,4 @@ cd React-CV-Puslapis
 
 npm install
 
-npm start
+npm run dev
