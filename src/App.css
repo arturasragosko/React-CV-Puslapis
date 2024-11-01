@@ -1,0 +1,236 @@
+/* Header */
+.nav-link {
+  color: #000000 !important;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+.nav-link.active {
+  color: #000000 !important;
+  text-decoration: underline;
+  text-decoration-color: #30B0C7;
+  background-color: transparent !important;
+  outline: none;
+}
+
+.nav-link:hover {
+  color: #434343 !important;
+  text-decoration: underline;
+  text-decoration-color: #30B0C7;
+}
+
+.nav-link:focus {
+  outline: none !important;
+}
+
+.custom-header {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 20px 100px; /* Padding for larger screens */
+}
+
+.header-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styles for mobile devices */
+@media (max-width: 576px) {
+  .custom-header {
+      padding: 10px; /* Less padding on small screens */
+  }
+
+  .header-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+  }
+
+  .nav {
+      overflow: auto; /* Allow horizontal scrolling */
+      white-space: nowrap; /* Prevent nav items from wrapping */
+      width: 100%; /* Full width */
+      justify-content: center; /* Center items in the nav */
+  }
+
+  .nav-item {
+      margin: 0 10px; /* Space between nav items */
+  }
+
+  /* Targeting the ARRA_ text */
+  .text-logo-highlight {
+      font-size: 20px; /* Font size for logo in this range */
+      margin-bottom: 10px; /* Space below the logo */
+  }
+}
+
+/* Styles for mobile devices */
+@media (min-width: 576px) and (max-width: 768px) {
+  .custom-header {
+    padding: 20px; /* Less padding on small screens */
+  }
+
+  .header-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .text-logo-highlight {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 40px;
+  }
+
+  .nav {
+    overflow: auto;
+    white-space: nowrap; /* Prevent nav items from wrapping */
+  }
+
+  .nav-item {
+    margin: 0 10px; /* Space between nav items */
+  }
+
+  .nav-link {
+      font-size: 18px; /* Smaller font size for mobile */
+  }
+}
+
+/* END OF Header */
+
+.cv-page{
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cv-page h1{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+/* SVG component style */
+.h-svg{
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+}
+
+.p-svg{
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3px;
+}
+/* END OF SVG component style */
+
+.features-component{
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.features-component p{
+  font-size: 20px;
+}
+
+.features-component h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Styles for the cards */
+.card {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  border: none;
+  box-shadow: none;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: rotate(10deg);
+  filter: grayscale(35%);
+}
+
+.quote-card{
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quote-card h1{
+  font-size: 3.7;
+}
+
+.quote-card p{
+  font-size: 20px;
+}
+
+/* Footer */
+.footer-style {
+    background-color: #434343 !important;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-heading{
+    color:#ffffff;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.footer-contact{
+    color:#ffffff;
+    text-decoration: none;
+    /* Prevent clicks */
+    pointer-events: none;
+}
+
+.nav-link.footer-links{
+    color:#ffffff !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px) {
+  .hide-section {
+    display: none; /* Hide services section on smaller screens */
+  }
+}
+
+/* END OF Footer */
+
+
+/* FONT */
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
