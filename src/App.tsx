@@ -12,21 +12,20 @@ import ContactsPage from "./ContactsPage";
 
 // Routing
 import { routes } from "./data";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Router>
-        <Header routes={routes} />
-        <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/cv" element={<CvPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </>
+    <Router >
+      <Header routes={routes} />      
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/cv" element={<CvPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
+      </Routes>
+      
+      <Footer />
+    </Router>
   );
 }
 
